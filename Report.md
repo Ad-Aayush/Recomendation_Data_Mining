@@ -73,3 +73,12 @@
 | Your method |   0.2212    |   0.2141    |    0.2137    |
 | Surprise    |    0.2279     |   0.2279   |   0.2251   |
 
+- Results computed by our method are slightly better to the results computed by the Surprise library.
+- The results of the matrix factorization method are better than the collaborative filtering method because the matrix factorization method assigns factors to users and items. So, this model can understand stuff beyond the similarities.
+- With more features/neighbours, the RMSE decreases because the model can capture more complex patterns in the data. However, the model can also overfit the data if the number of features/neighbours is too high.
+
+
+| SVD | k = 2 | k = 5 | k = 10 |
+|-----|-------|-------|--------|
+|$\lambda_1$| 0.5 |0.05 | 0.5|
+|$\lambda_2$| 0.75 |0.05 | 0.75|
